@@ -20,10 +20,8 @@ class RootPage extends StatelessWidget {
         } else {
           // snapshot에는 유저 정보가 들어있음. 로그인 성공하면 데이터가 있음
           if (snapshot.hasData) {
-            print('1');
             return TabPage(snapshot.data);
           } else {
-            print('2');
             return LoginPage();
           }
         }
