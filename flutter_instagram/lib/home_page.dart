@@ -16,7 +16,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Instagram Clon',
+        backgroundColor: Colors.white,
+        title: Text('Insta Clone',
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
       ),

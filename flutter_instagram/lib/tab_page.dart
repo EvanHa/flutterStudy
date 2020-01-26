@@ -1,8 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_instagram/account_page.dart';
 import 'package:flutter_instagram/home_page.dart';
 import 'package:flutter_instagram/search_page.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+
 
 class TabPage extends StatefulWidget {
   final FirebaseUser user;
@@ -23,7 +24,7 @@ class _TabPageState extends State<TabPage> {
     super.initState();
     _pages = [
       HomePage(widget.user),
-      SearchPage(),
+      SearchPage(widget.user),
       AccountPage(widget.user),
     ];
   }
