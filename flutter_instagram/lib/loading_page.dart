@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 
-class LoadingPage extends StatefulWidget {
-    @override
-    _LoadingPageState createState() => _LoadingPageState();
-}
+// 상태 변경 요소가 없다면 StatefulWidget보다 StatelessWidget이 성능적으로 유리함
 
-class _LoadingPageState extends State<LoadingPage> {
-    @override
-    Widget build(BuildContext context) {
-        return Center(
-            child: CircularProgressIndicator(),
-        );
-    }
+class LoadingPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+        child: CircularProgressIndicator(),
+    );
+  }
 }
