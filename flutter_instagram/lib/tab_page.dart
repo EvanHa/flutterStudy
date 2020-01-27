@@ -31,8 +31,9 @@ class _TabPageState extends State<TabPage> {
 
   @override
   Widget build(BuildContext context) {
+    print("tab page created");
     return Scaffold(
-      body: Center(child: _pages[_selectedIndex],),
+      body: _buildBody(),
       bottomNavigationBar: BottomNavigationBar(
         fixedColor: Colors.black,
         onTap: _onItemTapped,
@@ -49,5 +50,9 @@ class _TabPageState extends State<TabPage> {
     setState(() {
       _selectedIndex = index;
     });
+  }
+
+  Widget _buildBody() {
+    return Center(child: _pages[_selectedIndex],);
   }
 }

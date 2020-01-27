@@ -1,8 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+
+import 'package:flutter_instagram/loading_page.dart';
 import 'package:flutter_instagram/login_page.dart';
 import 'package:flutter_instagram/tab_page.dart';
-import 'package:flutter_instagram/loading_page.dart';
 
 class RootPage extends StatelessWidget {
   @override
