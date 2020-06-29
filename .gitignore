@@ -351,8 +351,8 @@ MigrationBackup/
 
 
 
-# Created by https://www.toptal.com/developers/gitignore/api/flutter,androidstudio,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=flutter,androidstudio,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/flutter,androidstudio,gradle,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=flutter,androidstudio,gradle,visualstudiocode
 
 ### Flutter ###
 # Flutter/Dart/Pub related
@@ -421,6 +421,24 @@ build/
 # Ignore all local history of files
 .history
 
+### Gradle ###
+.gradle
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+### Gradle Patch ###
+**/build/
+
 ### AndroidStudio ###
 # Covers files to be ignored for android development using Android Studio.
 
@@ -440,7 +458,6 @@ gen/
 out/
 
 # Gradle files
-.gradle
 .gradle/
 
 # Signing files
@@ -550,4 +567,4 @@ fabric.properties
 
 !/gradle/wrapper/gradle-wrapper.jar
 
-# End of https://www.toptal.com/developers/gitignore/api/flutter,androidstudio,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/flutter,androidstudio,gradle,visualstudiocode
