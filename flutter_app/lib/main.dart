@@ -12,18 +12,18 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            //verticalDirection: VerticalDirection.down,
-            //mainAxisAlignment: MainAxisAlignment.spaceBetween, // 중앙 정렬
-            //crossAxisAlignment: CrossAxisAlignment.end, // 위젯의 끝 라인을 맞춰서 정렬
-            crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Container(
-                    height: 100.0,
-                    color: Colors.white,
-                    child: Text('Container 1')
+                CircleAvatar(
+                  radius: 50.0,
+                  backgroundImage: AssetImage('images/somi.png'),
                 ),
-                SizedBox(
-                  height: 20.0,
+                Text(
+                  'Somi',
+                  style: TextStyle(
+                    fontSize: 40.0,
+                    color: Colors.white,
+
+                  )
                 ),
                 Container(
                     height: 100.0,
